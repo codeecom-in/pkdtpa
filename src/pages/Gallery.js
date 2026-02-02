@@ -8,253 +8,253 @@ function Gallery() {
   const galleryImages = [
     {
       id: 1,
-      src: '/images/awards/1.jpg',
+      src: require('../assets/ptpa_award_1.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 2,
-      src: '/images/awards/2.jpg',
+      src: require('../assets/ptpa_award_2.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 3,
-      src: '/images/awards/3.jpg',
+      src: require('../assets/ptpa_award_3.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 4,
-      src: '/images/awards/4.jpg',
+      src: require('../assets/ptpa_award_4.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 5,
-      src: '/images/awards/5.jpg',
+      src: require('../assets/ptpa_award_5.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 6,
-      src: '/images/awards/6.jpg',
+      src: require('../assets/ptpa_award_6.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 7,
-      src: '/images/awards/7.jpg',
+      src: require('../assets/ptpa_award_7.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 8,
-      src: '/images/awards/8.jpg',
+      src: require('../assets/ptpa_award_8.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 9,
-      src: '/images/awards/9.jpg',
+        src: require('../assets/ptpa_award_9.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 10,
-      src: '/images/awards/10.jpg',
+      src: require('../assets/ptpa_award_10.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 11,
-      src: '/images/awards/11.jpg',
+      src: require('../assets/ptpa_award_11.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 12,
-      src: '/images/awards/12.jpg',
+      src: require('../assets/ptpa_award_12.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 13,
-      src: '/images/awards/13.jpg',
+      src: require('../assets/ptpa_award_13.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 14,
-      src: '/images/awards/14.jpg',
+      src: require('../assets/ptpa_award_14.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 15,
-      src: '/images/awards/15.jpg',
+      src: require('../assets/ptpa_award_15.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 16,
-      src: '/images/awards/16.jpg',
+      src: require('../assets/ptpa_award_16.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 17,
-      src: '/images/awards/17.jpg',
+      src: require('../assets/ptpa_award_17.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 18,
-      src: '/images/awards/18.jpg',
+      src: require('../assets/ptpa_award_18.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 19,
-      src: '/images/awards/1.jpg',
+        src: require('../assets/ptpa_award_19.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 20,
-      src: '/images/awards/20.jpg',
+      src: require('../assets/ptpa_award_20.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 21,
-      src: '/images/awards/1.jpg',
+      src: require('../assets/ptpa_award_21.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
     {
       id: 1,
-      src: '/images/football/a.jpg',
+      src: require('../assets/ptpa_football_1.jpg'),
       title: 'PTPA Football Tournament 2024',
       category: 'Football Match'
     },
     {
       id: 2,
-      src: '/images/football/2.jpg',
+      src: require('../assets/ptpa_football_2.jpg'),
       title: 'PTPA Football Tournament 2024',
       category: 'Football Match'
     },
   {
     id: 3,
-    src: '/images/football/3.jpg',
+    src: require('../assets/ptpa_football_3.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 4,
-    src: '/images/football/4.jpg',
+    src: require('../assets/ptpa_football_4.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 5,
-    src: '/images/football/5.jpg',
+    src: require('../assets/ptpa_football_5.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 6,
-    src: '/images/football/6.jpg',
+      src: require('../assets/ptpa_football_6.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 7,
-    src: '/images/football/7.jpg',
+    src: require('../assets/ptpa_football_7.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 8,
-    src: '/images/football/8.jpg',
+    src: require('../assets/ptpa_football_8.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 9,
-    src: '/images/football/9.jpg',
+    src: require('../assets/ptpa_football_9.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 10,
-    src: '/images/football/10.jpg',
+    src: require('../assets/ptpa_football_10.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 11,
-    src: '/images/football/11.jpg',
+    src: require('../assets/ptpa_football_11.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 12,
-    src: '/images/football/12.jpg',
+    src: require('../assets/ptpa_football_12.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 13,
-    src: '/images/football/13.jpg',
+    src: require('../assets/ptpa_football_13.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 14,
-    src: '/images/football/14.jpg',
+      src: require('../assets/ptpa_football_14.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 15,
-    src: '/images/football/15.jpg',
+    src: require('../assets/ptpa_football_15.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 16,
-    src: '/images/football/16.jpg',
+    src: require('../assets/ptpa_football_16.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 17,
-    src: '/images/football/17.jpg',
+    src: require('../assets/ptpa_football_17.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 18,
-    src: '/images/football/18.jpg',
+      src: require('../assets/ptpa_football_18.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 19,
-    src: '/images/football/22.jpg',
+    src: require('../assets/ptpa_football_19.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 20,
-    src: '/images/football/20.jpg',
+    src: require('../assets/ptpa_football_20.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   },
   {
     id: 21,
-    src: '/images/football/21.jpg',
+    src: require('../assets/ptpa_football_21.jpg'),
     title: 'PTPA Football Tournament 2024',
     category: 'Football Match'
   }
