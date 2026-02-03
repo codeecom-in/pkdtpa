@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { lazy } from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { committeeMembers } from '../data/membersData';
 import Carousel from '../components/Carousel';
@@ -38,7 +39,7 @@ function Home() {
         </div>
       </section>
 
-      <Carousel images={carouselImages} />
+      <Carousel images={carouselImages} loading={lazy} />
 
     
 
@@ -68,28 +69,28 @@ function Home() {
           <h2>{t.home.aboutTitle}</h2>
           <p>{t.home.aboutText1}</p>
           <p>{t.home.aboutText2}</p>
-          <a href="/about" className="cta-button">{t.home.learnMore}</a>
+          <Link to="/about" className="cta-button">{t.home.learnMore}</Link>
         </div>
       </section>
 
       <section className="quick-links">
         <div className="links-container">
-          <a href="/committee" className="link-card">
+          <Link to="/committee" className="link-card">
             <h3>{t.home.committee}</h3>
             <p>{t.home.committeeText}</p>
-          </a>
-          <a href="/members" className="link-card">
+          </Link>
+          <Link to="/members" className="link-card">
             <h3>{t.home.membersDir}</h3>
             <p>{t.home.membersDirText}</p>
-          </a>
-          <a href="/events" className="link-card">
+          </Link>
+          <Link to="/events" className="link-card">
             <h3>{t.home.eventsSection}</h3>
             <p>{t.home.eventsText}</p>
-          </a>
-          <a href="/gallery" className="link-card">
+          </Link>
+          <Link to="/gallery" className="link-card">
             <h3>{t.home.gallery}</h3>
             <p>{t.home.galleryText}</p>
-          </a>
+          </Link>
         </div>
       </section>
         <section className="leaders-section">
