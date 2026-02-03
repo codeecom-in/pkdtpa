@@ -4,18 +4,26 @@ import { committeeMembers } from '../data/membersData';
 import Carousel from '../components/Carousel';
 import LeadersCarousel from '../components/LeadersCarousel';
 import './Home.css';
+import h1 from '../assets/hero_1.jpg';
+import h2 from '../assets/hero_2.jpg';
+import h3 from '../assets/hero_3.jpg';
+import h4 from '../assets/hero_4.jpg'; 
+import h5 from '../assets/hero_5.jpg';
+import h6 from '../assets/hero_6.jpg';
+import h7 from '../assets/hero_7.jpg';
+import h8 from '../assets/hero_8.jpg';
 
 function Home() {
   const { t } = useLanguage();
   const carouselImages = [
-    'images/hero/1.jpg',
-    'images/hero/2.jpg',
-    'images/hero/3.jpg',
-    'images/hero/4.jpg',
-    'images/hero/5.jpg',
-    'images/hero/6.jpg',
-    'images/hero/7.jpg',
-    'images/hero/11.jpg',
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h7,
+    h8
   ];
 
   // Get core leadership team (first 7 members: Chairman, 2 Vice Chairmen, Convener, 2 Joint Conveners, Treasurer)
