@@ -1,13 +1,13 @@
 /* Events Page Styles */
 .events {
   min-height: 100vh;
-  background-color: #e5e5f7;
-  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-color: #FFE7E7;
+  background-image: radial-gradient(#944E63 0.5px, #FFE7E7 0.5px);
   background-size: 10px 10px;
 }
 
 .events-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #B47B84 0%, #944E63 100%);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -36,7 +36,7 @@
 }
 
 .upcoming-events h2 {
-  color: #667eea;
+  color: #B47B84;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -58,11 +58,11 @@
 
 .event-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 8px 20px rgba(180, 123, 132, 0.2);
 }
 
 .event-date {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #B47B84 0%, #944E63 100%);
   padding: 1.5rem;
   display: flex;
   align-items: center;
@@ -91,7 +91,7 @@
 
 .event-content .location {
   margin: 0 0 1rem 0;
-  color: #667eea;
+  color: #B47B84;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -105,7 +105,7 @@
 
 .register-btn {
   padding: 0.8rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #B47B84 0%, #944E63 100%);
   color: white;
   border: none;
   border-radius: 25px;
@@ -125,7 +125,7 @@
 }
 
 .past-events h2 {
-  color: #667eea;
+  color: #B47B84;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -142,16 +142,18 @@
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-top: 4px solid #667eea;
+  border-top: 4px solid #B47B84;
+
 }
 
 .highlight-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 8px 20px #B47B84;
+  border: 2px solid #B47B84;
 }
 
 .highlight-card h3 {
-  color: #667eea;
+  color: #B47B84;
   margin-top: 0;
   margin-bottom: 0.8rem;
   font-size: 1.2rem;
@@ -165,7 +167,7 @@
 
 /* Event Types */
 .event-types h2 {
-  color: #667eea;
+  color: #B47B84;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -177,20 +179,23 @@
 }
 
 .type-card {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  background: white;
   padding: 2rem;
   border-radius: 12px;
-  border: 2px solid rgba(102, 126, 234, 0.2);
+  border: 2px solid rgba(180, 123, 132, 0.2);
   transition: all 0.3s ease;
 }
 
 .type-card:hover {
-  border-color: #667eea;
+  border-color: #4c4343;
   background: white;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px #080c20;
+  border: 2px solid #ffffff;
 }
 
 .type-card h3 {
-  color: #667eea;
+  color: #B47B84;
   margin-top: 0;
   margin-bottom: 0.8rem;
   font-size: 1.2rem;

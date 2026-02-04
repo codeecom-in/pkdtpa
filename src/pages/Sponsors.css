@@ -1,0 +1,161 @@
+/* Sponsors Page Styles */
+.sponsors-page {
+    min-height: 100vh;
+    background-color: #FFE7E7;
+    background-image: radial-gradient(#944E63 0.5px, #FFE7E7 0.5px);
+    background-size: 10px 10px;
+    padding-bottom: 4rem;
+}
+
+.sponsors-hero {
+    background: linear-gradient(135deg, #B47B84 0%, #944E63 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sponsors-hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.sponsors-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.sponsors-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.sponsors-message {
+    text-align: center;
+    padding: 3rem;
+    background: #B47B84;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+.codee{
+    color: white;
+    cursor: pointer;
+}
+.no-sponsors-message h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.no-sponsors-message p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.codeecom-banner {
+    background: linear-gradient(135deg, #1a1f4a 0%, #2d1b69 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.codeecom-banner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(45, 27, 105, 0.3);
+}
+
+.codeecom-banner h3 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.codeecom-banner p {
+    opacity: 0.9;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.codeecom-link {
+    display: inline-block;
+    background: white;
+    color: #2d1b69;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: opacity 0.2s ease;
+}
+
+.codeecom-link:hover {
+    opacity: 0.9;
+}
+
+.advertise-cta {
+    background: linear-gradient(135deg, #B47B84 0%, #944E63 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(180, 123, 132, 0.3);
+}
+
+.advertise-cta h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+}
+
+.advertise-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.contact-btn {
+    background: white;
+    color: #944E63;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.code{
+    color: violet;
+}
+.ecom{
+    color: blue;
+}
+@media (max-width: 768px) {
+    .sponsors-hero h1 {
+        font-size: 2rem;
+    }
+
+    .codeecom-banner {
+        padding: 2rem 1.5rem;
+    }
+
+    .codeecom-banner h3 {
+        font-size: 1.6rem;
+    }
+
+    .advertise-cta {
+        padding: 2rem 1.5rem;
+    }
+}

@@ -1,12 +1,14 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { committeeMembers } from '../data/membersData';
+import { useGSAPAnimations } from '../hooks/useGSAPAnimations';
 import './Committee.css';
 
 function Committee() {
+  const scrollRef = useGSAPAnimations();
   const { t } = useLanguage();
   return (
-    <div className="committee">
+    <div className="committee" ref={scrollRef}>
       <section className="committee-header">
         <h1>{t.committee.title}</h1>
         <p>{t.committee.subtitle}</p>

@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import './App.css';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -12,12 +13,14 @@ import Events from './pages/Events';
 import Gallery from './pages/Gallery';
 import Blogs from './pages/Blogs';
 import PastEvent from './pages/PastEvent';
+import Sponsors from './pages/Sponsors';
 
 function App() {
   return (
     <Router>
       <LanguageProvider>
         <div className="App">
+          <ScrollToTop />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -27,6 +30,7 @@ function App() {
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/past-event/:id" element={<PastEvent />} />
           </Routes>
           <Footer />

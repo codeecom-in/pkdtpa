@@ -1,12 +1,18 @@
 import React, { useState, useMemo } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { useLocation } from 'react-router-dom';
 import { sampleMembers } from '../data/membersData';
 import './Members.css';
 
 function Members() {
   const { t } = useLanguage();
+  const location = useLocation();
   const [searchTerm, setSearchTerm] = useState('');
-  const [filterLocation, setFilterLocation] = useState('');
+
+  // Logic to handle "Expatriates" filter which implies NOT in Pandikkad
+  const initialFilterRaw = location.state?.filter || '';
+  const [filterLocation, setFilterLocation] = useState(initialFilterRaw === 'Expatriates' ? 'All' : initialFilterRaw);
+  const isExpatFilter = initialFilterRaw === 'Expatriates';
 
   // Get unique locations for filter
   const locations = ['All', ...new Set(sampleMembers.map(m => m.location))];
@@ -17,11 +23,18 @@ function Members() {
       const memberName = member.name || '';
       const memberProfession = member.profession || '';
       const matchesSearch = memberName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           memberProfession.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesLocation = !filterLocation || filterLocation === 'All' || member.location === filterLocation;
+        memberProfession.toLowerCase().includes(searchTerm.toLowerCase());
+
+      let matchesLocation = true;
+      if (isExpatFilter) {
+        matchesLocation = member.location !== 'Pandikkad';
+      } else {
+        matchesLocation = !filterLocation || filterLocation === 'All' || member.location === filterLocation;
+      }
+
       return matchesSearch && matchesLocation;
     });
-  }, [searchTerm, filterLocation]);
+  }, [searchTerm, filterLocation, isExpatFilter]);
 
   return (
     <div className="members">

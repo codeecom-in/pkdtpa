@@ -52,6 +52,9 @@ function Navbar() {
           <li className="nav-item">
             <Link to="/blogs" className="nav-link" onClick={closeMenu}>{t.nav.blogs}</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/sponsors" className="nav-link" onClick={closeMenu}>Sponsors</Link>
+          </li>
         </ul>
       </div>
     </nav>

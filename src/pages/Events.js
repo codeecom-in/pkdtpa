@@ -2,16 +2,18 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { eventsData } from '../data/membersData';
+import { useGSAPAnimations } from '../hooks/useGSAPAnimations';
 import './Events.css';
 
 function Events() {
+  const scrollRef = useGSAPAnimations();
   const { t } = useLanguage();
   const navigate = useNavigate();
   const openPastEvent = (id, title) => {
     navigate(`/past-event/${id}`, { state: { title } });
   };
   return (
-    <div className="events">
+    <div className="events" ref={scrollRef}>
       <section className="events-header">
         <h1>{t.events?.title || 'Events & Gatherings'}</h1>
         <p>{t.events?.subtitle || 'Join us for memorable celebrations and community gatherings'}</p>

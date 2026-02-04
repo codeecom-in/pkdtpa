@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { useGSAPAnimations } from '../hooks/useGSAPAnimations';
 import './Gallery.css';
 
 function Gallery() {
+  const scrollRef = useGSAPAnimations();
   const { t } = useLanguage();
   const [selectedImage, setSelectedImage] = useState(null);
   const galleryImages = [
@@ -56,7 +58,7 @@ function Gallery() {
     },
     {
       id: 9,
-        src: require('../assets/ptpa_award_9.jpg'),
+      src: require('../assets/ptpa_award_9.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
@@ -116,7 +118,7 @@ function Gallery() {
     },
     {
       id: 19,
-        src: require('../assets/ptpa_award_19.jpg'),
+      src: require('../assets/ptpa_award_19.jpg'),
       title: 'Award Ceremony 2025',
       category: 'Awards & Recognitions'
     },
@@ -144,125 +146,125 @@ function Gallery() {
       title: 'PTPA Football Tournament 2024',
       category: 'Football Match'
     },
-  {
-    id: 3,
-    src: require('../assets/ptpa_football_3.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 4,
-    src: require('../assets/ptpa_football_4.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 5,
-    src: require('../assets/ptpa_football_5.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 6,
+    {
+      id: 3,
+      src: require('../assets/ptpa_football_3.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 4,
+      src: require('../assets/ptpa_football_4.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 5,
+      src: require('../assets/ptpa_football_5.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 6,
       src: require('../assets/ptpa_football_6.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 7,
-    src: require('../assets/ptpa_football_7.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 8,
-    src: require('../assets/ptpa_football_8.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 9,
-    src: require('../assets/ptpa_football_9.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 10,
-    src: require('../assets/ptpa_football_10.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 11,
-    src: require('../assets/ptpa_football_11.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 12,
-    src: require('../assets/ptpa_football_12.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 13,
-    src: require('../assets/ptpa_football_13.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 14,
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 7,
+      src: require('../assets/ptpa_football_7.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 8,
+      src: require('../assets/ptpa_football_8.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 9,
+      src: require('../assets/ptpa_football_9.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 10,
+      src: require('../assets/ptpa_football_10.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 11,
+      src: require('../assets/ptpa_football_11.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 12,
+      src: require('../assets/ptpa_football_12.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 13,
+      src: require('../assets/ptpa_football_13.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 14,
       src: require('../assets/ptpa_football_14.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 15,
-    src: require('../assets/ptpa_football_15.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 16,
-    src: require('../assets/ptpa_football_16.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 17,
-    src: require('../assets/ptpa_football_17.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 18,
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 15,
+      src: require('../assets/ptpa_football_15.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 16,
+      src: require('../assets/ptpa_football_16.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 17,
+      src: require('../assets/ptpa_football_17.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 18,
       src: require('../assets/ptpa_football_18.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 19,
-    src: require('../assets/ptpa_football_19.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 20,
-    src: require('../assets/ptpa_football_20.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  },
-  {
-    id: 21,
-    src: require('../assets/ptpa_football_21.jpg'),
-    title: 'PTPA Football Tournament 2024',
-    category: 'Football Match'
-  }
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 19,
+      src: require('../assets/ptpa_football_19.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 20,
+      src: require('../assets/ptpa_football_20.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    },
+    {
+      id: 21,
+      src: require('../assets/ptpa_football_21.jpg'),
+      title: 'PTPA Football Tournament 2024',
+      category: 'Football Match'
+    }
 
   ];
 
   return (
-    <div className="gallery">
+    <div className="gallery" ref={scrollRef}>
       <section className="gallery-header">
         <h1>{t.gallery?.title || 'Photo Gallery'}</h1>
         <p>{t.gallery?.subtitle || 'Precious moments and memories of our community'}</p>
@@ -293,10 +295,9 @@ function Gallery() {
         <div className="modal-overlay" onClick={() => setSelectedImage(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={() => setSelectedImage(null)}>×</button>
-            <img src={selectedImage.src} alt={selectedImage.title} />
-            <div className="modal-footer">
-              <h3>{selectedImage.title}</h3>
-              <div className="share-buttons">
+            <div className="image-wrapper">
+              <img src={selectedImage.src} alt={selectedImage.title} />
+              <div className="share-buttons-overlay">
                 <a
                   href={`https://wa.me/?text=Check%20out%20this%20photo%20from%20PTPA%20events:%20${encodeURIComponent(window.location.href)}`}
                   target="_blank"
@@ -304,7 +305,7 @@ function Gallery() {
                   className="share-btn whatsapp-btn"
                   title="Share on WhatsApp"
                 >
-                  📱 WhatsApp
+                  <i className="fa-brands fa-whatsapp"></i>
                 </a>
                 <a
                   href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
@@ -313,10 +314,12 @@ function Gallery() {
                   className="share-btn facebook-btn"
                   title="Share on Facebook"
                 >
-                  👍 Facebook
+                  <i className="fa-brands fa-facebook"></i>
                 </a>
               </div>
             </div>
+            {/* Optional: Show title below if needed, though PastEvent style implies overlay focus */}
+            {/* <div className="modal-footer"><h3>{selectedImage.title}</h3></div> */}
           </div>
         </div>
       )}

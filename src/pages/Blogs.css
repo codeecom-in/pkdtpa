@@ -1,14 +1,14 @@
 /* Blogs Page Styles */
 .blogs {
   min-height: 100vh;
-  background-color: #e5e5f7;
-  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-color: #FFE7E7;
+  background-image: radial-gradient(#944E63 0.5px, #FFE7E7 0.5px);
   background-size: 10px 10px;
 }
 
 /* Blogs Hero Section */
 .blogs-hero {
-  background: linear-gradient(135deg, #1a1f4a 0%, #2d1b69 50%, #0f0f2e 100%);
+  background: linear-gradient(135deg, #B47B84 0%, #944E63 100%);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -23,9 +23,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.15) 0%, transparent 50%);
+  background:
+    radial-gradient(circle at 20% 50%, rgba(180, 123, 132, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(148, 78, 99, 0.15) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -51,7 +51,6 @@
 /* Blogs Content Section */
 .blogs-content {
   padding: 3rem 2rem;
-  background-color: white;
 }
 
 .blogs-container {
@@ -63,8 +62,8 @@
 .no-blogs-message {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-  border: 2px solid rgba(102, 126, 234, 0.2);
+  background: linear-gradient(135deg, rgba(180, 123, 132, 0.1) 0%, rgba(148, 78, 99, 0.1) 100%);
+  border: 2px solid rgba(180, 123, 132, 0.2);
   border-radius: 16px;
   margin-bottom: 3rem;
 }
@@ -97,11 +96,11 @@
 }
 
 .blogs-submission-section h3 {
-  color: #667eea;
+  color: #B47B84;
   font-size: 1.5rem;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #667eea;
+  border-bottom: 2px solid #B47B84;
 }
 
 /* Contact Info */
@@ -122,10 +121,10 @@
 }
 
 .contact-item {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(180, 123, 132, 0.05) 0%, rgba(148, 78, 99, 0.05) 100%);
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #B47B84;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -136,10 +135,10 @@
 }
 
 .contact-item:hover {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
-  border-left-color: #764ba2;
+  background: linear-gradient(135deg, rgba(180, 123, 132, 0.15) 0%, rgba(148, 78, 99, 0.15) 100%);
+  border-left-color: #944E63;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 4px 12px rgba(180, 123, 132, 0.2);
 }
 
 .contact-icon {
@@ -162,7 +161,7 @@
 }
 
 .guidelines-section h4 {
-  color: #667eea;
+  color: #B47B84;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }

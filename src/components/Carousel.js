@@ -37,14 +37,14 @@ function Carousel({ images }) {
         ))}
       </div>
 
-      <button className="carousel-button prev" onClick={goToPrevious}>
+      {/* <button className="carousel-button prev" onClick={goToPrevious}>
         &#10094;
       </button>
       <button className="carousel-button next" onClick={goToNext}>
         &#10095;
-      </button>
+      </button> */}
 
-      <div className="carousel-indicators">
+      {/* <div className="carousel-indicators">
         {images.map((_, index) => (
           <div
             key={index}
@@ -52,7 +52,7 @@ function Carousel({ images }) {
             onClick={() => goToSlide(index)}
           ></div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

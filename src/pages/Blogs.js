@@ -1,12 +1,14 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { useGSAPAnimations } from '../hooks/useGSAPAnimations';
 import './Blogs.css';
 
 function Blogs() {
+  const scrollRef = useGSAPAnimations();
   const { t } = useLanguage();
 
   return (
-    <div className="blogs">
+    <div className="blogs" ref={scrollRef}>
       <section className="blogs-hero">
         <div className="blogs-hero-content">
           <h1>{t.blogs.title}</h1>
@@ -24,7 +26,7 @@ function Blogs() {
 
           <div className="blogs-submission-section">
             <h3>{t.blogs.sendBlogs}</h3>
-            
+
             <div className="contact-info">
               <p><strong>{t.blogs.contactInfo}</strong></p>
               <div className="contact-details">

@@ -1,11 +1,13 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { useGSAPAnimations } from '../hooks/useGSAPAnimations';
 import './AboutUs.css';
 
 function AboutUs() {
+  const scrollRef = useGSAPAnimations();
   const { t } = useLanguage();
   return (
-    <div className="about-us">
+    <div className="about-us" ref={scrollRef}>
       <section className="about-header">
         <h1>{t.about.title}</h1>
         <p>{t.about.subtitle}</p>

@@ -1,13 +1,13 @@
 /* Gallery Page Styles */
 .gallery {
   min-height: 100vh;
-  background-color: #e5e5f7;
-  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-color: #FFE7E7;
+  background-image: radial-gradient(#944E63 0.5px, #FFE7E7 0.5px);
   background-size: 10px 10px;
 }
 
 .gallery-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #B47B84 0%, #944E63 100%);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -83,7 +83,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+  background: linear-gradient(135deg, rgba(180, 123, 132, 0.8), rgba(148, 78, 99, 0.8));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,13 +122,13 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 2.5rem;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  background: linear-gradient(135deg, rgba(180, 123, 132, 0.1), rgba(148, 78, 99, 0.1));
   border-radius: 12px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #B47B84;
 }
 
 .gallery-info .info-box h2 {
-  color: #667eea;
+  color: #B47B84;
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.8rem;
@@ -155,11 +155,11 @@
 }
 
 .contact-info strong {
-  color: #667eea;
+  color: #B47B84;
 }
 
 .contact-link {
-  color: #667eea;
+  color: #B47B84;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -167,8 +167,8 @@
 }
 
 .contact-link:hover {
-  color: #764ba2;
-  border-bottom-color: #764ba2;
+  color: #944E63;
+  border-bottom-color: #944E63;
 }
 
 /* Gallery Categories */
@@ -179,7 +179,7 @@
 
 .gallery-categories h2 {
   text-align: center;
-  color: #667eea;
+  color: #B47B84;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -198,16 +198,16 @@
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-top: 4px solid #667eea;
+  border-top: 4px solid #B47B84;
 }
 
 .category-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 8px 20px rgba(180, 123, 132, 0.2);
 }
 
 .category-card h3 {
-  color: #667eea;
+  color: #B47B84;
   margin-top: 0;
   margin-bottom: 0.8rem;
   font-size: 1.2rem;
@@ -445,3 +445,75 @@
   }
 }
 
+/* Gallery Image Modal Styles adapted from PastEvent */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper img {
+  display: block;
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+.share-buttons-overlay {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(180, 123, 132, 0.9);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+}
+
+.share-btn i {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.share-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.share-btn.whatsapp-btn {
+  background: #25d366;
+}
+
+.share-btn.whatsapp-btn:hover {
+  background: #1fad4f;
+}
+
+.share-btn.facebook-btn {
+  background: #1877f2;
+}
+
+.share-btn.facebook-btn:hover {
+  background: #0a66c2;
+}
+
+/* Hide old modal footer styles if necessary or override */
+.modal-footer {
+  display: none;
+}

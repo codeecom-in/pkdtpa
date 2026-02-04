@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import { eventsData } from '../data/membersData';
 import { eventPhotos, eventTitles } from '../utils/importImages';
+import { useGSAPAnimations } from '../hooks/useGSAPAnimations';
 import './PastEvent.css';
 
 function PastEvent() {
+  const scrollRef = useGSAPAnimations();
   const { id } = useParams();
   const photos = eventPhotos[id] || [];
   const [selectedImage, setSelectedImage] = useState(null);
@@ -15,7 +17,7 @@ function PastEvent() {
   const title = stateTitle || (eventFromData && eventFromData.title) || eventTitles[id] || `Past Event ${id}`;
 
   return (
-    <div className="past-event-page">
+    <div className="past-event-page" ref={scrollRef}>
       <header className="past-event-header">
         <h1>{title}</h1>
         <p>Photos for {title}</p>
