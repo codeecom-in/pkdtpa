@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.097f4ead.css",
-    "main.js": "/static/js/main.edb0e898.js",
+    "main.css": "/static/css/main.22810954.css",
+    "main.js": "/static/js/main.f0c002c1.js",
     "static/js/453.03346f77.chunk.js": "/static/js/453.03346f77.chunk.js",
     "static/media/ptpa_football_14.jpg": "/static/media/ptpa_football_14.d8ca42941fe82da3d5c7.jpg",
     "static/media/ptpa_football_2.jpg": "/static/media/ptpa_football_2.30ce83e7360e8560d35c.jpg",
@@ -69,12 +69,12 @@
     "static/media/ad1.png": "/static/media/ad1.746e33c51c32808b053f.png",
     "static/media/hero_8.jpg": "/static/media/hero_8.5985d49243424447127c.jpg",
     "index.html": "/index.html",
-    "main.097f4ead.css.map": "/static/css/main.097f4ead.css.map",
-    "main.edb0e898.js.map": "/static/js/main.edb0e898.js.map",
+    "main.22810954.css.map": "/static/css/main.22810954.css.map",
+    "main.f0c002c1.js.map": "/static/js/main.f0c002c1.js.map",
     "453.03346f77.chunk.js.map": "/static/js/453.03346f77.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.097f4ead.css",
-    "static/js/main.edb0e898.js"
+    "static/css/main.22810954.css",
+    "static/js/main.f0c002c1.js"
   ]
 }
